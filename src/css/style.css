@@ -1,0 +1,527 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url(../font/NetflixSans-Light.otf) format(opentype), 
+    url(../font/NetflixSans-Medium.otf) format(opentype),
+    url(../font/NetflixSans-Regular.otf) format(opentype),
+    url(../font/NetflixSans-Bold.otf) format(opentype),
+    url(../font/NeflixSans-Bolder.ttf) format(truetype);
+}
+
+body{
+    font-family: 'Netflix Sans',Helvetica Neue, Segoe UI,Roboto, Ubuntu, sans-serif;
+    background-color: #232323;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 350px;
+}
+
+#netflix-logo{
+    width: 160px;
+}
+
+#options-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.idiomas{
+    background-color: rgba(0, 0, 0, 0.377);
+    background-image: url(../img/globo-icon.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 7px 0px;
+    padding-left: 2.25rem;
+    padding-right: 12px;
+    border-radius: 5px;
+    border: 1px solid #232323;
+}
+
+.idiomas:focus{
+    border: 2px solid rgb(218, 218, 218);
+}
+
+#botao-login{
+    background-color: #E50914;
+    color: white;
+    font-weight: medium;
+    padding: 5px 15px 8px 15px;
+    border-radius: 5px;
+}
+
+#botao-login:hover{
+    background-color: #C11119;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#all{
+    width: 100%;
+    background-color: #232323;
+}
+
+/*Home*/
+#home{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacoes-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 105px;
+}
+
+#home h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#textopri-home{
+    font-size: 25px;
+    text-justify:  distribute;
+    margin-bottom: 20px;
+}
+
+#textosec-home{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#form-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#iemail{
+    width: 350px;
+    background-color: rgba(36, 36, 36, 0.63);
+    color: white;
+    font-size: 16px;
+    padding: 15px 10px;
+    border-radius: 3px;
+    border: 0.5px solid #a3a3a3;
+}
+#ivamos{
+    width: 175px;
+    background-color: #E50914;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+#ivamos:hover{
+    background-color: #C11119;
+}
+
+/*Card*/
+
+#card{
+    background-image: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    width: 88%;
+    height: 120px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 25px;
+    top: 630px;
+    border-radius: 5px;
+}
+
+#informacoes-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#informacoes-card h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#informacoes-card p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#informacoes-card a{
+    color: #448ED6;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration-line: underline;
+}
+
+#informacoes-card img{
+    width: 20px;
+    position: absolute;
+    top: 96.5px;
+    left: 570px;
+}
+
+/*Tv*/
+#tv{
+    margin-top: -70px;
+    width: 100%;
+    height: 529px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#informacoes-tv{
+    margin: 50px;
+    width: 514.08px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#informacoes-tv h1{
+    font-size: 45px;
+
+}
+
+#informacoes-tv p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#tv img{
+    position: relative;
+    width: 508.08px;
+}
+
+#tv video{
+    position: absolute;
+    width: 360px;
+    left: 800px;
+    top: 872px;
+}
+
+/*Onde quiser*/
+#onde-quiser{
+    margin-top: 10px;
+    width: 100%;
+    height: 529px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#informacoes-onde-quiser{
+    margin: 50px;
+    width: 514.08px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#informacoes-onde-quiser h1{
+    font-size: 45px;
+}
+
+#informacoes-onde-quiser p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#onde-quiser img{
+    position: relative;
+    width: 518px;
+}
+
+#onde-quiser video{
+    position: absolute;
+    width: 310px;
+    left: 210px;
+    top: 1372px;
+}
+
+/*Kids*/
+#kids{
+    margin-top: 10px;
+    width: 100%;
+    height: 529px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#informacoes-kids{
+    margin: 50px;
+    width: 514.08px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#informacoes-kids h1{
+    font-size: 45px;
+    width: 350px;
+}
+
+#informacoes-kids p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/*Download*/
+#download{
+    margin-top: 10px;
+    width: 100%;
+    height: 529px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#informacoes-download{
+    margin: 50px;
+    width: 514.08px;
+    display: flex;
+    flex-direction: column;
+}
+
+#informacoes-download h1{
+    font-size: 45px;
+    width: 350px;
+}
+
+#informacoes-download p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#card-download{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 18%;
+    border-radius: 10px;
+    background-color: black;
+    border: 2px solid grey;
+    gap: 15px;
+    padding: 0px 15px;
+    z-index: 1;
+    transform: translateX(-50%);
+    left: 27%;
+    bottom: -330%;
+    min-width: 15rem;
+}
+
+#informacoes-card-download{
+    width: 200px;
+}
+
+#card-download h1{
+    font-size: 16px;
+}
+
+#card-download p{
+    font-size: 14px;
+    color: #0068E4;
+}
+
+#download-icon{
+    width: 30px;
+}
+
+#boxshot{
+    width: 23%;
+}
+
+/*Perguntas Frequentes*/
+#perguntas{
+    margin-top: 10px;
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 25px;
+
+}
+
+#perguntas-frequentes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.perguntas-freq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    height: 84px;
+    background-color: rgb(45, 45, 45);
+    margin: 0px 0px 10px 0px;
+    color: white;
+    border: 0;
+    padding: 0px 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.perguntas-freq:hover{
+    background-color: #4E4E4E;
+}
+
+.perguntas-freq img{
+    width: 50px;
+}
+
+#textosec-perguntas{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#form-email-perguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0px 30px 0px;
+}
+
+#iemail-perguntas{
+    width: 350px;
+    background-color: rgba(36, 36, 36, 0.63);
+    color: white;
+    font-size: 16px;
+    padding: 15px 10px;
+    border-radius: 3px;
+    border: 0.5px solid #a3a3a3;
+}
+#ivamos-perguntas{
+    width: 175px;
+    background-color: #E50914;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+#ivamos-perguntas:hover{
+    background-color: #C11119;
+}
+
+/*Footer*/
+footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 529px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 50px;
+}
+
+#informacoes-footer{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 155px 0px 155px;
+    text-align: left;
+}
+
+footer nav{
+    margin: 40px 0px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer > #informacoes-footer > nav > a{
+    color: rgba(255, 255, 255, 0.575);
+    text-decoration-line: underline;
+    margin: 5px 20px 5px 20px;
+    font-size: 13px;
+}
+
+footer > #informacoes-footer > p > a{
+    color: rgba(255, 255, 255, 0.575);
+    text-decoration-line: underline;
+    font-size: 13px;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.575);
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#idioma-s{
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.377);
+    background-image: url(../img/globo-icon.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 7px 0px;
+    padding-left: 2.25rem;
+    padding-right: 12px;
+    border-radius: 5px;
+    border: 1px solid #232323;
+}
+
